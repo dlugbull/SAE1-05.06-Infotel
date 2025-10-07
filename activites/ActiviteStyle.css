@@ -5,3 +5,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.image {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.Logo {
+    width: 200px;
+    height: auto;
+    margin-left: 20px;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}   
