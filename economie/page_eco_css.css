@@ -10,11 +10,15 @@
   transition: opacity 0.2s;
 }
 
+body{
+    --back: white;
+    --background: #dde2ec;;
+    background-color: var(--back);
+}
 
 .chart-container {
     width: 600px;
     height: 450px;
-    margin: 0 auto;
 }
 
 .chart {
@@ -23,12 +27,6 @@
     height: 400px;
     background-color: #fff;
     border: 1px solid #ccc;
-    margin:0 auto;
-}
-
-.line-chart {
-    width: 100%;
-    height: calc(100% - 20px);
 }
 
 .y-axis {
@@ -113,6 +111,9 @@
     border:1px solid #dedede; 
 }
 
+
+
+
 /* Liste des couleurs de la légende */
 #camembert #vert {background: #27AE60;}
 #camembert #bleu {background: #3498DB;}
@@ -120,3 +121,111 @@
 #camembert #rouge {background: #FF5733;}
 #camembert #rose {background: #fe0098;}
 
+
+
+
+
+
+/* conteneur graphique + texte */
+.graph-texte-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    gap:30px;
+
+    
+    background-color: var(--background);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+
+
+
+
+
+/* conteneur camembert + texte */
+.title-camembert_camembert_et_texte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+
+
+/* texte camembert */
+.text-camembert{
+    text-align: center;
+
+    background-color: var(--background);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+
+
+
+
+
+
+/* Texte en bas de camembert */
+.text-en-dessous-camembert{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+
+    background-color: var(--background);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+
+.text-en-dessous-camembert h1{
+    margin-bottom: 50px;
+}
+
+
+
+/* Texte milieu */
+.text-milieu-1-2{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text-milieu2 h2{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text-milieu2 p{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.text-milieu{
+    background-color: var(--background);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
+
+/*Conclusion*/
+.conclusion-eco{
+    text-align: center;
+
+    background-color: var(--background);
+    width:100%;
+    height:100%;
+    border-radius:5px;
+}
