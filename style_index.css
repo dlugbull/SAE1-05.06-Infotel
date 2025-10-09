@@ -1,16 +1,192 @@
+*{
+    margin:0px;
+}
+
+header{
+    position: fixed;
+    width:100%;
+    z-index:10;
+}
+
+
 nav{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    background: #072440;
+    height : 50px;
+    align-items : center;
+    z-index:10;
+}
+
+nav a{
+    text-decoration: none;
+    color : white;
+}
+
+nav select{
+    background: #072440;
+    color:white;
+    border:none;
+}
+
+nav a:hover{
+    border-bottom: lightblue 5px solid;
+    transition : border-bottom 0.2s;
+}
+
+.blog{
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    width : 100%;
+
 }
 
 article{
+    display: inline-block;
     box-shadow: 7px 7px 15px grey;
     margin: 20px;
+    position : relative;
+    width : 90%;
+    height : 300px;
+    border-radius:10px;
 }
 
-.slogan{
-    text-align: center;
-    font-size:24px;
-    font-weight: bold;
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:none;
+    border: none;
+    color: white;
+    font-size:32px;
+    border-radius: 50%;
+    z-index: 9;
+    text-align:center;
+    width:85%;
+}
+
+.description{
+    font-size : 24px;
+}
+
+.contacts img{
+    width : 25px;
+    height : 25px;
+}
+
+.left img{
+    height : 300px;
+    border-radius : 10px 0px 0px 10px;
+
+}
+
+.right img{
+    height : 300px;
+    border-radius : 0px 10px 10px 0px;
+}
+
+.left{
+    position : absolute;
+    top : 0;
+    left : 0;
+    align-items : left;
+}
+
+.right{
+    position : absolute;
+    top : 0;
+    right : 0;
+    align-items : right;
+}
+
+.full-screen img{
+    position : absolute;
+    top : 10px;
+    right : 10px;
+    height : 30px;
+    width : 30px;
+    background : #ffffff;
+}
+
+.full-screen img:hover{
+    background : #f0f0f0;
+}
+
+
+iframe{
+    border-radius : 0px 10px 10px 0px;
+    border : none;
+}
+
+.text-right{
+    position : relative;
+    left : 475px;
+    width : 1068px;
+}
+
+.text-left{
+    position : relative;
+    left : 25px;
+}
+
+
+.carousel {
+    top: 50px;
+    width: 100%;
+    height: 100vh; /* pleine hauteur de la fenêtre */
+}
+
+.carousel-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.carousel-images img.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Boutons flèches */
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+    z-index: 9;
+    transition: color 0.3s ease;
+}
+
+.carousel button:hover {
+    color:grey;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
 }
