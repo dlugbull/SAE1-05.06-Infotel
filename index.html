@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="style_index.css">
-    <link rel="icon" type="image/png" href="images/logo_infotel.png">
+    <link rel="icon" type="image/png" href="images/logo_Infotel.png">
 
 
 </head>
 <body>
-    <header id="header">
+    <header>
         <nav>
-            <a href=""><img src="images/infotel.png" alt="logo" width="50px" height="50px"></a>
+            <a href=""><img src="images/infotel.png" alt="logo infotel" height="40px"></a>
             <a href="">Acceuil</a>
             <a href="histoire/histoire.html">Histoire</a>
             <a href="economie/page_eco.html">Economie</a>
             <a href="activites/activites.html">Activités</a>
-            <a href="https://infotel.com/contact/">Contacter Infotel</a>
+            <a href="https://infotel.com/contact/" target="_blank">Contacter Infotel</a>
             <select id="langue" onchange="changerLangue(this)">
                 <option selected value="fr">Français</option>
                 <option value="en">English</option>
@@ -25,7 +25,7 @@
         </nav>
     </header>
 
-    <section class="carousel" top="50px">
+    <section class="carousel" top="50px" id="header">
         <div class="carousel-images">
             <img src="https://picsum.photos/id/1015/1920/1080" alt="Image 1" class="active">
             <img src="https://picsum.photos/id/1025/1920/1080" alt="Image 2">
@@ -73,7 +73,7 @@
         <article>
             <div class="text-left">
                 <h2>Localisation d'Infotel</h2>
-                <p>Adresse : 13 Rue Madeleine Michelis 92200 NEUILLY-SUR-SEINE
+                <p>Adresse : 13 Rue Madeleine Michelis, 92200 Neuilly-sur-Seine, France
                 <br>Nombre de sites : 16</p>
             </div>
             <div class="right">
@@ -85,12 +85,12 @@
     </section>
     <footer>
         <a href="#header"><img src="images/fleche_haut.png" alt="fleche de retour vers le haut" height="75px" width="75px"></a>
-        <ul class="contacts">
-            <li><a href="https://www.linkedin.com/company/infotel" target="_blank"><img src="images/facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://www.linkedin.com/company/infotel-group/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a></li>
-            <li><a href="https://x.com/Infotel_" target="_blank"><img src="images/x.png" alt="X"></a></li>
-        </ul>
-        <p>© Damien LUGBULL</p>
+        <div>
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel-group/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="images/x.png" alt="X"></a>
+        </div>
+        <p>Damien LUGBULL</p>
     </footer>
     <script type="text/javascript" src="script_index.js"></script>
 </body>
