@@ -12,6 +12,10 @@ header{
     z-index:10;
 }
 
+p{
+    font-size: 20px;
+}
+
 
 nav{
     display: flex;
@@ -37,6 +41,10 @@ nav select{
 nav a:hover{
     border-bottom: lightblue 5px solid;
     transition : border-bottom 0.2s;
+}
+
+nav img{
+    height:40px;
 }
 
 .blog{
@@ -72,6 +80,7 @@ article{
     z-index: 9;
     text-align:center;
     width:85%;
+    text-shadow: 2px 2px darkgrey;
 }
 
 .description{
@@ -79,8 +88,8 @@ article{
 }
 
 footer div img{
-    width : 35px;
-    height : 35px;
+    width : 50px;
+    height : 50px;
     margin-left:10px;
 }
 
@@ -132,11 +141,13 @@ iframe{
     position : relative;
     left : 475px;
     width : 1068px;
+    top:20px
 }
 
 .text-left{
     position : relative;
     left : 25px;
+    top : 20px;
 }
 
 
@@ -208,6 +219,7 @@ footer{
     gap:15px;
 }
 
-footer ul{
-    list-style : none;
+
+h2{
+    font-size:32px;
 }
