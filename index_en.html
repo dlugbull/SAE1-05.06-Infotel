@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style_index.css">
+    <link rel="icon" type="image/png" href="images/logo_Infotel.png">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="images/infotel.png" alt="logo infotel"></a>
+            <a href="">Home</a>
+            <a href="histoire/histoire_en.html">History</a>
+            <a href="economie/page_eco_en.html">Economy</a>
+            <a href="activites/activites_en.html">Activity</a>
+            <a href="https://infotel.com/contact/" target="_blank">Contact Infotel</a>
+            <select id="langue" onchange="changerLangue(this)">
+                <option value="fr">Français</option>
+                <option selected value="en">English</option>
+            </select>
+        </nav>
+    </header>
+
+    <div class="carousel" id="header">
+        <div class="carousel-images">
+            <img src="images/carousel1.jpg" alt="Image 1" class="active">
+            <img src="images/carousel2.png" alt="Image 2">
+            <img src="images/carousel3.jpg" alt="Image 3">
+        </div>
+        <div class="text">
+            <h2 class="slogan">At your side for the digital transformation of your company</h2>
+            <p class="description">Infotel is a company that offers software development and offers IT services such as big data, training, advice, and architecture.</p>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <div class="blog">
+        <article>
+            <div class="left">
+                <img src="images/image_histoire.png" alt="Image de l'article">
+            </div>
+            <div class="text-right">
+                <h2>Infotel's history</h2><br>
+                <p>Résumé de l'article...<br>
+                <a href="histoire/histoire_en.html">Read more</a></p>
+            </div>
+        </article>
+        <article>
+            <div class="text-left">
+                <h2>Infotel's activity</h2><br>
+                <p>Résumé de l'article...<br>
+                <a href="activites/activites_en.html">Read more</a></p>
+            </div>
+            <div class="right">
+                <img src="images/image_activite.jpg" alt="Image de l'article">
+            </div>
+        </article>
+        <article>
+            <div class="left">
+                <img src="images/image_eco.jpg" alt="Image de l'article">
+            </div>
+            <div class="text-right">
+                <h2>Infotel's economy</h2><br>
+                <p>Résumé de l'article...<br>
+                <a href="economie/page_eco_en.html">Read more</a></p>
+            </div>
+        </article>
+        <article>
+            <div class="text-left">
+                <h2>Infotel's location</h2><br><br><br><br>
+                <p>Address : 13 Rue Madeleine Michelis, 92200 Neuilly-sur-Seine, France
+                <br><br>Amount of sites : 16</p>
+            </div>
+            <div class="right">
+                <iframe width="425" height="300" src="https://www.openstreetmap.org/export/embed.html?bbox=2.2743844954036256%2C48.880052646594926%2C2.2774556247256776%2C48.88139673662909&amp;layer=mapnik&amp;marker=48.88072469612698%2C2.2759200600646636"></iframe>
+                <a class="full-screen" href="https://www.openstreetmap.org/?mlat=48.880725&amp;mlon=2.275920#map=19/48.880725/2.275920" target="_blank">
+                <img src="images/fullscreen.png" alt="plein écran"></a>
+            </div>
+        </article>
+    </div>
+    <footer>
+        <a href="#header"><img src="images/fleche_haut.png" alt="fleche de retour vers le haut"></a>
+        <div>
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel-group/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="images/x.png" alt="X"></a>
+        </div>
+        <p>Damien LUGBULL</p>
+    </footer>
+    <script src="script_index.js"></script>
+</body>
+</html>
