@@ -223,3 +223,7 @@ footer{
 h2{
     font-size:32px;
 }
+
+footer p{
+    margin-right: 15px;
+}
