@@ -21,7 +21,7 @@ function prevSlide() {
 }
 
 function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 10000); // 10 secondes
+    autoSlide = setInterval(nextSlide, 6000); // 10 secondes
 }
 
 function stopAutoSlide() {
