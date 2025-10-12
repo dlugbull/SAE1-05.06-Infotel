@@ -186,7 +186,7 @@ h2{
 .text-right{
     position : relative;
     left : 475px;
-    width : 1068px;
+    width : 800px;
     top:20px
 }
 
@@ -194,6 +194,7 @@ h2{
     position : relative;
     left : 25px;
     top : 20px;
+    width:800px;
 }
 
 /* carte */
