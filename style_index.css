@@ -6,16 +6,12 @@ body{
     background: #f5f5f5;
 }
 
+/*nav*/
 header{
     position: fixed;
     width:100%;
     z-index:10;
 }
-
-p{
-    font-size: 20px;
-}
-
 
 nav{
     display: flex;
@@ -47,110 +43,7 @@ nav img{
     height:40px;
 }
 
-.blog{
-    align-items : center;
-    display : flex;
-    flex-direction : column;
-    justify-content: space-evenly;
-    width : 100%;
-
-}
-
-article{
-    background: #a5a7d6;
-    display: inline-block;
-    box-shadow: 7px 7px 15px grey;
-    margin: 20px;
-    position : relative;
-    width : 90%;
-    height : 300px;
-    border-radius:10px;
-}
-
-.text{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background:none;
-    border: none;
-    color: white;
-    font-size:32px;
-    border-radius: 50%;
-    z-index: 9;
-    text-align:center;
-    width:85%;
-    text-shadow: 2px 2px darkgrey;
-}
-
-.description{
-    font-size : 24px;
-}
-
-footer div img{
-    width : 50px;
-    height : 50px;
-    margin-left:10px;
-}
-
-.left img{
-    height : 300px;
-    border-radius : 10px 0px 0px 10px;
-
-}
-
-.right img{
-    height : 300px;
-    border-radius : 0px 10px 10px 0px;
-}
-
-.left{
-    position : absolute;
-    top : 0;
-    left : 0;
-    align-items : left;
-}
-
-.right{
-    position : absolute;
-    top : 0;
-    right : 0;
-    align-items : right;
-}
-
-.full-screen img{
-    position : absolute;
-    top : 10px;
-    right : 10px;
-    height : 30px;
-    width : 30px;
-    background : #ffffff;
-}
-
-.full-screen img:hover{
-    background : #f0f0f0;
-}
-
-
-iframe{
-    border-radius : 0px 10px 10px 0px;
-    border : none;
-}
-
-.text-right{
-    position : relative;
-    left : 475px;
-    width : 1068px;
-    top:20px
-}
-
-.text-left{
-    position : relative;
-    left : 25px;
-    top : 20px;
-}
-
-
+/* carousel */
 .carousel {
     top: 50px;
     width: 100%;
@@ -208,6 +101,120 @@ iframe{
     right: 20px;
 }
 
+/* texte du carousel */
+.text{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background:none;
+    border: none;
+    color: white;
+    font-size:32px;
+    border-radius: 50%;
+    z-index: 9;
+    text-align:center;
+    width:85%;
+    text-shadow: 2px 2px darkgrey;
+}
+
+.description{
+    font-size : 24px;
+}
+
+
+/* blog */
+.blog{
+    align-items : center;
+    display : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    width : 100%;
+
+}
+
+article{
+    background: #a5a7d6;
+    display: inline-block;
+    box-shadow: 7px 7px 15px grey;
+    margin: 20px;
+    position : relative;
+    width : 90%;
+    height : 300px;
+    border-radius:10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size:32px;
+}
+
+.left img{
+    height : 300px;
+    border-radius : 10px 0px 0px 10px;
+
+}
+
+.right img{
+    height : 300px;
+    border-radius : 0px 10px 10px 0px;
+}
+
+.left{
+    position : absolute;
+    top : 0;
+    left : 0;
+    align-items : left;
+}
+
+.right{
+    position : absolute;
+    top : 0;
+    right : 0;
+    align-items : right;
+}
+
+.text-right{
+    position : relative;
+    left : 475px;
+    width : 1068px;
+    top:20px
+}
+
+.text-left{
+    position : relative;
+    left : 25px;
+    top : 20px;
+}
+
+/* carte */
+iframe{
+    border-radius : 0px 10px 10px 0px;
+    border : none;
+}
+
+.full-screen img{
+    position : absolute;
+    top : 10px;
+    right : 10px;
+    height : 30px;
+    width : 30px;
+    background : #ffffff;
+}
+
+.full-screen img:hover{
+    background : #f0f0f0;
+}
+
+/* footer */
+footer div img{
+    width : 50px;
+    height : 50px;
+    margin-left:10px;
+}
 
 footer{
     display: flex;
@@ -217,11 +224,6 @@ footer{
     color: white;
     align-items : center;
     gap:15px;
-}
-
-
-h2{
-    font-size:32px;
 }
 
 footer p{
