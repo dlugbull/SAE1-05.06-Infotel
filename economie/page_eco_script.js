@@ -64,3 +64,12 @@ points.forEach(point => {
   });
 });
 
+
+function changerLangue(select) {
+    const langue = select.value;
+    if (langue === "fr") {
+        window.location.href = "page_eco.html"; // page française
+    } else if (langue === "en") {
+        window.location.href = "page_eco_en.html"; // page anglaise
+    }
+}
