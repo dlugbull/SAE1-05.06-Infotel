@@ -21,8 +21,8 @@ h2{
     h2{ font-size: 1.8rem; }
 }
 
-.section {
-    padding: 30px;   
+.section, section {
+    padding: 30px;
     background: #a5a7d6;
     display: block;
     box-shadow: 7px 7px 15px grey;
@@ -110,7 +110,6 @@ main img {
 }
 
 /* titre à gauche, image à droite, description en dessous */
-
 .produit{
     margin-bottom: 30px;
 }
@@ -147,7 +146,7 @@ main img {
     text-decoration: underline;
 }
 
-/* Style pour la liste de points sous la .section Logiciels */
+/* Style pour la liste de points sous la section logiciels */
 .points{
     margin: 10px auto 30px auto;
     list-style: none;
@@ -162,7 +161,7 @@ main img {
 }
 
 .points li::before{
-    content: "→"; /* flèche */
+    content: "→"; 
     position: absolute;
     left: 0;
     top: 0;
@@ -174,7 +173,7 @@ main img {
 .produit .points{ text-align: center; display: inline-block; }
 .produit .points li{ text-align: left; }
 
-/* Responsive : empiler sur petits écrans */
+/* Responsive */
 @media (max-width: 900px){
     .ligne-produit{ flex-direction: column-reverse; align-items: stretch; }
     .titre-produit{ text-align: left; flex-basis: auto; }
@@ -190,7 +189,6 @@ main img {
 .Activite{
     position: relative;
     overflow: hidden;
-    /* anneau coloré léger + ombre portée */
     box-shadow: 0 0 0 8px rgba(11,68,112,0.15), 0 18px 40px rgba(0,0,0,0.35);
     border-radius: 14px;
 }
@@ -288,7 +286,7 @@ footer > .section > a{
     align-items: center;
 }
 
-/* Recrutement CTA: hover scale, grey filter and hover text */
+/* Recrutement: */
 .recrutement {
     display: inline-block;
     position: relative;
@@ -297,7 +295,7 @@ footer > .section > a{
     text-decoration: none;
 }
 
-/* Centrer la CTA de recrutement sur la page */
+/* Centrer recrutement sur la page */
 .recrutement {
     display: block; /* pour pouvoir utiliser margin auto */
     margin: 0 auto; /* centre horizontalement */
@@ -348,13 +346,11 @@ footer > .section > a{
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* Accessibility: make hover visible when link is focused via keyboard */
 .recrutement:focus {
     outline: 3px solid rgba(21,156,228,0.35);
     outline-offset: 4px;
 }
 
-/* On small touch devices, ensure the hover is visible on first tap by reducing opacity transition delay */
 @media (pointer: coarse) {
     .recrutement .hover {
         opacity: 1;
