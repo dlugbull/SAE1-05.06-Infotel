@@ -2,7 +2,7 @@
 
 ## Sujet    
 
-[Site de présentation d'Infotel]([https://login.github.io/projet/](https://dlugbull.github.io/SAE1-05.06-Infotel/))
+[Site de présentation d'Infotel](https://dlugbull.github.io/SAE1-05.06-Infotel/)
 
 ## Membres du groupe :
 
