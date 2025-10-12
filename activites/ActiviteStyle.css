@@ -1,41 +1,359 @@
+/*Globalité */
+*{
+    margin:0px;
+    font-family: Arial;
+}
+
+h1{
+    font-family: 'Verdana Bold';
+}
+
+h2{
+    font-size: 3rem; /* plus grand */
+    line-height: 1.1;
+    font-weight: 800;
+    margin: 1.2rem 0;
+    text-align: center;
+    font-family: 'Verdana Bold';
+}
+
+@media (max-width: 900px){
+    h2{ font-size: 1.8rem; }
+}
+
+section {
+    padding: 30px;   
+    background: #a5a7d6;
+    display: block;
+    box-shadow: 7px 7px 15px grey;
+    margin: 20px auto;
+    position : relative;
+    border-radius:10px;
+    max-width: 1000px; /* limite la largeur sur grand écran */
+}
+
+body{
+    background: #f5f5f5;
+}
+
+/* Justification du texte pour le contenu principal */
+main, section, p, li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Header */
+
+header{
+    position: fixed;
+    width:100%;
+    z-index:10;
+}
+
 nav{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    background: #072440;
+    height : 50px;
+    align-items : center;
+    z-index:10;
 }
 
+nav a{
+    text-decoration: none;
+    color : white;
+}
+
+nav select{
+    background: #072440;
+    color:white;
+    border:none;
+}
+
+nav a:hover{
+    border-bottom: lightblue 5px solid;
+    transition : border-bottom 0.2s;
+}
+
+/* Logiciels*/
+.Image {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    border: 8px solid #0b4470;
+    border-radius: 14px;
+    box-shadow: 4px 10px 20px rgba(0,0,0,0.25);
+}
+
+.alt-two h2 {
+  text-align:center;
+  
+}
+.alt-two h2:before {
+  left:50%; margin-left:-30px;
+}
+
+/* Centrer toutes les images à l'intérieur du contenu principal */
+main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;    
+    height: auto;
+}
+
+/* titre à gauche, image à droite, description en dessous */
+
+.produit{
+    margin-bottom: 30px;
+}
+.ligne-produit{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.titre-produit{
+    flex: 1 1 40%;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: left;
+}
+.image-produit{
+    flex: 0 0 50%;
+    text-align: right;
+}
+.image-produit .Image{
+    max-width: 100%;
+    height: auto;
+}
+.produit-desc{
+    margin-top: 12px;
+    text-align: justify;
+}
+
+.lire-plus{
+    color: #0b4470;
+    font-weight: 600;
+    text-decoration: none;
+}
+.lire-plus:hover{
+    text-decoration: underline;
+}
+
+/* Style pour la liste de points sous la section Logiciels */
+.points{
+    margin: 10px auto 30px auto;
+    list-style: none;
+    text-align: center;
+}
+.points li{
+    margin: 8px 0;
+    line-height: 1.5;
+    color: #072440;
+    position: relative;
+    padding-left: 28px;
+}
+
+.points li::before{
+    content: "→"; /* flèche */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #0b4470;
+    font-weight: 700;
+}
+
+/* Centrer la liste visuellement */
+.produit .points{ text-align: center; display: inline-block; }
+.produit .points li{ text-align: left; }
+
+/* Responsive : empiler sur petits écrans */
+@media (max-width: 900px){
+    .ligne-produit{ flex-direction: column-reverse; align-items: stretch; }
+    .titre-produit{ text-align: left; flex-basis: auto; }
+    .image-produit{ text-align: center; flex-basis: auto; }
+}
+
+/* Sur grand écran, centrer le titre dans sa colonne et ajouter un padding pour équilibrer l'espace */
+@media (min-width: 901px){
+    .ligne-produit{ align-items: center; }
+    .titre-produit{ display: flex; align-items: center; justify-content: center; padding-right: 20px; text-align: center; }
+}
+
+.Activite{
+    position: relative;
+    overflow: hidden;
+    /* anneau coloré léger + ombre portée */
+    box-shadow: 0 0 0 8px rgba(11,68,112,0.15), 0 18px 40px rgba(0,0,0,0.35);
+    border-radius: 14px;
+}
+
+.Activite::after{
+    /* léger hover sombre pour améliorer la lisibilité du texte blanc */
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background: rgba(0,0,0,0.35);
+    pointer-events: none;
+}
+
+/* Image Activite */
+.gif {
+    display: block;
+    width: 100vw; /* occupe toute la largeur de la fenêtre */
+    height: auto; /* conserve les proportions */
+    margin-left: calc(50% - 50vw); /* aligne l'image pour couvrir tout l'écran */
+    margin-right: calc(50% - 50vw);
+    object-fit: cover; /* si l'image est plus grande, conserve le ratio en couvrant */
+}
+
+.titre{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0.2rem 1rem;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 600px){
+    .titre{ font-size: 1.6rem; padding: 0.1rem .5rem; }
+}
+
+/* Réduire l'épaisseur des contours sur petits écrans */
+@media (max-width: 600px){
+    .Image{ border-width: 4px; border-radius: 10px; }
+    .Activite{ box-shadow: 0 0 0 4px rgba(11,68,112,0.12), 0 12px 24px rgba(0,0,0,0.25); border-radius: 10px; }
+}
+
+
+/* Titres : plus grands et centrés */
+main h1, h1 {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+
+main h2, h2 {
+    text-align: center;
+}
+
+
+
+/*Footer */
+/*Barre de contact */
 .Icon {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
 }
 
-.image {
-    justify-content: center;
+.icon-row{
     display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-.Logo {
-    width: 200px;
-    height: auto;
-    margin-left: 20px;
+    flex-direction: row;
     justify-content: center;
+    align-items: center; 
+    gap: 16px; 
+    margin-top: 8px;
+}
+
+ footer{
     display: flex;
-    margin: auto;
-    align-items: center;
-}
-
-article{
-    box-shadow: 7px 7px 15px grey;
-    margin: 20px;
-}
-
-.slogan{
+    justify-content: space-between;
+    flex-direction: row;
+    background: #0b4470;
+    color: white;
+    align-items : center;
+    gap:15px;
+    padding: 20px;
     text-align: center;
-    font-size:24px;
-    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 -6px 20px rgba(0,0,0,0.25);
+
+ }
+
+footer > section > a{
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Recrutement CTA: hover scale, grey filter and hover text */
+.recrutement {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px; /* match .Image */
+    text-decoration: none;
+}
+
+/* Centrer la CTA de recrutement sur la page */
+.recrutement {
+    display: block; /* pour pouvoir utiliser margin auto */
+    margin: 0 auto; /* centre horizontalement */
+    max-width: 500px; /* limite la largeur afin que l'image ne déborde pas */
+}
+
+.recrutement .hover {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 200ms ease, transform 200ms ease;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.recrutement img {
+    display: block;
+    transition: transform 300ms ease, filter 300ms ease;
+    will-change: transform, filter;
+}
+
+/* S'assurer que l'image garde son centrage et ses bordures arrondies à l'intérieur du conteneur */
+.recrutement img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.recrutement:hover img,
+.recrutement:focus img,
+.recrutement:active img {
+    transform: scale(1.04);
+    filter: grayscale(60%) brightness(0.9);
+}
+
+.recrutement:hover .hover,
+.recrutement:focus .hover,
+.recrutement:active .hover {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Accessibility: make hover visible when link is focused via keyboard */
+.recrutement:focus {
+    outline: 3px solid rgba(21,156,228,0.35);
+    outline-offset: 4px;
+}
+
+/* On small touch devices, ensure the hover is visible on first tap by reducing opacity transition delay */
+@media (pointer: coarse) {
+    .recrutement .hover {
+        opacity: 1;
+        background: rgba(0,0,0,0.45);
+    }
 }
