@@ -63,18 +63,21 @@ nav{
 nav a{
     text-decoration: none;
     color : #F5F5F5;
-    height : 40px;
 }
 
 nav select{
     background: #072440;
-    color:white;
+    color: #F5F5F5;
     border:none;
 }
 
 nav a:hover{
     border-bottom: lightblue 5px solid;
     transition : border-bottom 0.2s;
+}
+
+nav img{
+    height:40px;
 }
 
 /* Logiciels*/
