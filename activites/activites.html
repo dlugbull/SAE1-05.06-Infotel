@@ -5,100 +5,192 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activité</title>
     <link rel="stylesheet" href="ActiviteStyle.css">
-    <link rel="icon" type="image/png" href="../images/logo_infotel.png">
+    <link rel="icon" type="image/png" href="logo_infotel.png" width="10px">
 </head>
 <body>
 <!-- Barre de Navigation -->
 <header> 
     <nav>
-        <a href="../index.html"><img src="../images/infotel.png" alt="logo infotel" width="50px" height="50px"></a>
-        <a href="../index.html">Acceuil</a>
-        <a href="../histoire/histoire.html">Histoire</a>
-        <a href="../economie/page_eco.html">Economie</a>
-        <a href="">Activités</a>
-        <a href="https://infotel.com/contact/">Contacter Infotel</a>
+        <a href=""><img src="images/infotel.png" alt="logo infotel" height="40px"></a>
+        <a href="">Acceuil</a>
+        <a href="histoire/histoire.html">Histoire</a>
+        <a href="economie/page_eco.html">Economie</a>
+        <a href="activites/activites.html">Activités</a>
+        <a href="https://infotel.com/contact/" target="_blank">Contacter Infotel</a>
+        <select id="langue" onchange="changerLangue(this)">
+            <option selected value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
     </nav>
 </header>
 
 <main>
-    <h1>Activité </h1>
-    <h2>Logiciels</h2> <!-- Les produits que l'entreprise créer-->
-    <div>
-        <li>Arcsys</li>
-            <p>La Solution d'Archivage de Référence</p>
-            <a href="https://infotel.com/cas-clients/arcsys-archivage-electronique-a-valeur-probante"><img src="../images/arcsys.png" alt="Logo Arcsys" width="500px" class="Image"></a>
-            <p>Arcsys est une plateforme logicielle spécialisée dans l'archivage 
-                électronique à valeur probante et la conservation à long terme.</p>
-
-            <li>DB/IQ Suite</li>
-            <p>L'Excellence en Gestion DB2</p>
-            <a href="https://infotelcorp.com/product-portfolio/db-iq-quality-assurance"><img src="../images/DBIQ.png" alt="image pour DB/IQ Suite" width="500px" class="Image"></a>
-            <p>DB/IQ est une suite logicielle complète dédiée à l'assurance qualité 
-                et à l'optimisation des applications DB2 pour z/OS. </p>
-
-            <li>iDBA-Online</li>
-            <p>L'Intelligence Artificielle au Service de DB2</p>
-            <a href="https://infotel-software.com/fr/idba"><img src="../images/idba.png" alt="image pour iDBA-Online" width="500px" class="Image"></a>
-            <p>iDBA-Online est une solution innovante qui utilise l'intelligence 
-                artificielle pour automatiser la maintenance des environnements DB2.</p>
-            
-                <li>Orlando</li>
-            <p>La Révolution de la Documentation Aéronautique</p>
-            <a href="https://infotel.com/actualites/orlando-la-solution-logicielle-dinfotel-adoptee-par-air-canada"><img src="../images/Orlando.png" alt="image pour Orlando" width="500px" class="Image"></a>
-            <p>Orlando (Online Repository for LArge and Numerous DOcuments) est une 
-                solution de gestion documentaire spécifiquement conçue pour le 
-                secteur aérien. </p>
-            
-                <li>Deepeo</li>
-            <p>La Conformité RGPD Automatisée</p>
-            <a href="https://infotel.com/deepeo"><img src="../images/deepeo.png" alt="image pour Deepeo" width="500px" class="Image"></a>
-            <p>Deepeo est une solution innovante de gestion des données personnelles 
-                dans le respect du RGPD.</p>
-        </ul>
+    <div class="Activite">
+        <img src="Activite.gif" alt="logo infotel" class="gif">
+        <h1 class="titre">Activité</h1>
     </div>
-    <hr>
-    <h2>Clientèle</h2> <!-- Secteur d'activité de l'entreprise-->
-        <p>Infotel accompagne les directions informatiques et métiers des grands comptes 
-            français depuis plus de 45 ans. L'entreprise intervient auprès de clients 
-            prestigieux tels qu'Airbus, Air France, BNP Paribas, Banque de France, BPCE, 
-            Stellantis et APRR. Son expertise couvre plusieurs secteurs clés :</p>
-        <ul>
-            <li>Banque et Finance :</li>
-            <p>notamment avec BPCE, ARKEA et BNP Paribas</p>
-            <li>Industrie :</li>
-            <p>avec des clients tels que Airbus et Stellantis</p>
-            <li>Transport et Services :</li>
-            <p>incluant Air France, SNCF et Enedis</p>
-            <li>Assurance et Retraite (Secteur Public)</li>
-    </div>
-
-    <div>
-        <h2>Infotel Recrute !</h2> <!-- Section de recrutement-->
-        <a href="https://infotel.com/candidature"><img src="../images/recrutement.png" alt="image recrutement" width="500px" class="Image"></a>
-        <p>Infotel est constamment à la recherche de nouveaux talents pour rejoindre ses équipes.
-            Que vous soyez un développeur passionné, un expert en gestion de projet ou un testeur
-            chevronné, Infotel offre des opportunités de carrière stimulantes dans un environnement
-            dynamique et innovant. Rejoignez-nous pour contribuer à des projets d'envergure.
-        </p>
-    </div>
+    <br><br><br><br><br><br><br>
+    <section>
+        <div class="two alt-two">
+            <h2>Logiciels</h2> <!-- Les produits que l'entreprise créer-->
+        </div>
+        <div>
+            <p>Infotel développe et commercialise une <strong>gamme complète de logiciels</strong> 
+                destinés aux <em>grandes organisations</em>, particulièrement dans la gestion
+                des bases de données et l'archivage. Le groupe <strong>ambitionne de doubler</strong> 
+                son chiffre d'affaires logiciels d'ici 2026.</p>
+    </section>
+    <section>           
+        <div class="produit">
+            <div class="ligne-produit">
+                <div class="titre-produit">Arcsys</div>
+                <div class="image-produit"><img src="arcsys.png" alt="Logo Arcsys" class="Image"></div>
+            </div>
+            <div class="produit-desc"><p><strong>La Solution d'Archivage de Référence</strong></p>
+            <p><strong>Arcsys</strong> est une <em>plateforme logicielle</em> spécialisée dans l'archivage électronique à valeur probante et la <strong>conservation à long terme</strong>.
+            Il permet aux entreprises de <u>stocker, classer et conserver leurs documents numériques</u> dans le respect des normes légales (comme la norme <strong>NF Z42-013</strong> ou <strong>ISO 14641</strong>).</p> <a class="lire-plus" href="https://infotel.com/cas-clients/arcsys-archivage-electronique-a-valeur-probante">lire plus</a></div>
+            <br>
+            <p><u>Les principales fonctionnalités :</u></p>
+            <ul class="points">
+                <li>Archivage à valeur probante (garantie d’intégrité et de traçabilité des données).</li>
+                <li>Gestion du cycle de vie des documents (création, conservation, destruction).</li>
+                <li>Recherche rapide et consultation sécurisée des archives.</li>
+                <li>Conformité avec les exigences du RGPD et de la loi française sur la conservation numérique.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="produit">
+            <div class="ligne-produit">
+                <div class="image-produit"><img src="DBIQ.png" alt="image pour DB/IQ Suite" class="Image"></div>
+                <div class="titre-produit">DB/IQ Suite</div>
+            </div>
+            <div class="produit-desc"><p><strong>L'Excellence en Gestion DB2</strong></p>
+            <p><strong>DB/IQ Suite</strong> est une solution logicielle développée pour assurer la <em>supervision</em>, 
+            l'<em>optimisation</em> et la <em>maintenance intelligente</em> des bases de données, principalement IBM DB2 sur z/OS.</p> <a class="lire-plus" href="https://infotelcorp.com/produit-portfolio/db-iq-quality-assurance">lire plus</a></div>
+            <p>Elle s’adresse aux <strong>grandes entreprises</strong> et organisations critiques qui manipulent d’importants volumes de données et nécessitent une <strong>disponibilité permanente</strong> et des <em>performances optimales</em> de leurs systèmes.</p>
+            <br>
+            <p><u>Les principales fonctionnalités :</u></p>
+            <ul class="points">
+                <li>Analyse et surveillance des performances des bases de données DB2.</li>
+                <li>Détection des anomalies et propositions d’optimisation automatique.</li>
+                <li>Audit de requêtes SQL pour améliorer la vitesse d’exécution et réduire les coûts.</li>
+                <li>Tableaux de bord et rapports détaillés pour les administrateurs systèmes.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="produit">
+            <div class="ligne-produit">
+                <div class="titre-produit">iDBA-Online</div>
+                <div class="image-produit"><img src="idba.png" alt="image pour iDBA-Online" class="Image"></div>
+            </div>
+            <div class="produit-desc"><p><strong>L'Intelligence Artificielle au Service de DB2</strong></p>
+            <p><strong>iDBA-Online</strong> est un outil développé par Infotel pour la surveillance en temps réel et la gestion automatique des bases de données DB2 (sur les environnements mainframe IBM z/OS).</p>
+            <p>C’est une solution qui combine <em>analyse continue</em>, <strong>diagnostic intelligent</strong> et <strong>actions correctives automatisées</strong>, destinée aux administrateurs de bases de données (DBA).</p><a class="lire-plus" href="https://infotel-software.com/fr/idba">lire plus</a></div>
+            <br>
+            <p><u>Les principales fonctionnalités :</u></p>
+            <ul class="points">
+                <li>Surveillance en temps réel des performances DB2 (verrouillages, temps de réponse, ressources utilisées…).</li>
+                <li>Détection automatique des incidents et génération d’alertes précises.</li>
+                <li>Propositions d’actions correctives ou interventions automatiques pour prévenir les pannes.</li>
+                <li>Rapports détaillés sur l’activité du système et les tendances d’utilisation.</li>
+                <li>Interface conviviale permettant de visualiser l’état global des bases et de simplifier le diagnostic.</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="produit">
+            <div class="ligne-produit">
+                <div class="image-produit"><img src="Orlando.png" alt="image pour Orlando" class="Image"></div>
+                <div class="titre-produit">Orlando</div>
+            </div>
+            <div class="produit-desc"><p><strong>La Révolution de la Documentation Aéronautique</strong></p>
+            <p><strong>Orlando</strong> (Online Repository for LArge and Numerous DOcuments) est une solution de gestion documentaire spécifiquement conçue pour le secteur aérien.</p>
+                <p>Elle permet aux organisations de <em>dématérialiser leurs processus métiers</em> et de centraliser l’information dans un système unique. </p><a class="lire-plus" href="https://infotel.com/actualites/orlando-la-solution-logicielle-dinfotel-adoptee-par-air-canada">lire plus</a></div>
+            <br>
+            <p><u>Les principales fonctionnalités :</u></p>
+            <ul class="points">
+                <li>Numérisation et reconnaissance automatique des documents (OCR/ICR).</li>
+                <li>Classement automatisé et indexation intelligente.</li>
+                <li>Gestion des flux de validation et des signatures électroniques.</li>
+                <li>Intégration possible avec d’autres outils métiers (CRM, ERP, etc.).</li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div class="produit">
+            <div class="ligne-produit">
+                <div class="titre-produit">Deepeo</div>
+                        <div class="image-produit"><img src="deepeo.png" alt="image pour Deepeo" class="Image"></div>
+                    </div>
+                    <div class="produit-desc"><p><strong>La Conformité RGPD Automatisée</strong></p>
+                    <p><strong>Deepeo</strong> est une solution logicielle développée par Infotel pour aider les entreprises à <u>gérer et protéger les données personnelles</u> conformément au RGPD. </p><a class="lire-plus" href="https://infotel.com/deepeo">lire plus</a></div>
+                    <br>
+                    <p><u>Les principales fonctionnalités :</u></p>
+                    <ul class="points">
+                        <li>Cartographie automatique des données personnelles stockées dans les systèmes de l’entreprise.</li>
+                        <li>Détection des doublons et des données obsolètes.</li>
+                        <li>Mise en place de politiques d’anonymisation et de suppression automatique.</li>
+                        <li>Tableaux de bord RGPD pour suivre la conformité en temps réel.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div>
+            <h2>Clientèle</h2> <!-- Secteur d'activité de l'entreprise-->
+            <p>Infotel accompagne les directions informatiques et métiers des grands comptes 
+                français depuis <strong>plus de 45 ans</strong>. L'entreprise intervient auprès de clients 
+                prestigieux tels qu'<strong>Airbus</strong>, <strong>Air France</strong>, <strong>BNP Paribas</strong>, Banque de France, BPCE, 
+                Stellantis et APRR. Son expertise couvre plusieurs secteurs clés :</p>
+            <ul>
+                <li>Banque et Finance :</li>
+                <p>notamment avec BPCE, ARKEA et BNP Paribas</p>
+                <li>Industrie :</li>
+                <p>avec des clients tels que Airbus et Stellantis</p>
+                <li>Transport et Services :</li>
+                <p>incluant Air France, SNCF et Enedis</p>
+                <li>Assurance et Retraite (Secteur Public)</li>
+        </div>
+    </section>
+    <br>
+    <section>
+        <div>
+            <h2>Infotel Recrute !</h2> <!-- Section de recrutement-->
+            <a href="https://infotel.com/candidature" class="recrutement">
+                <img src="recrutement.png" alt="image recrutement" width="500px" class="Image">
+                <span class="hover">Voir les postes disponibles</span>
+            </a>
+            <br><br>
+            <p>Infotel est constamment à la recherche de nouveaux talents pour rejoindre ses équipes.
+                Que vous soyez un <strong>développeur passionné</strong>, un <em>expert en gestion de projet</em> ou un <strong>testeur chevronné</strong>, Infotel offre des <u>opportunités de carrière stimulantes</u> dans un environnement
+                dynamique et innovant. <strong>Rejoignez-nous</strong> pour contribuer à des projets d'envergure et faire partie de notre activité !
+            </p>
+        </div>
+    </section>
+    <br><br><br>
 </main>
-<hr>
 
 <!-- Bas de la page-->
 <footer>
-    <section>
+    <a href="#header"><img src="images/fleche_haut.png" alt="fleche de retour vers le haut" height="75px" width="75px"></a>
+    <span class="TexteFooter">
         <strong>Réseaux Sociaux</strong>
-        <p>Retrouvez-nous sur nos réseaux sociaux :</p>
-        <a href="https://www.linkedin.com/company/infotel" target="_blank"><img src="../images/facebook.png" class="Icon" alt="Facebook"></a>
-        <a href="https://www.linkedin.com/company/infotel-group/" target="_blank"><img src="../images/linkedin.jpg" class="Icon" alt="LinkedIn"></a>
-        <a href="https://x.com/Infotel_" target="_blank"><img src="../images/x.png" class="Icon" alt="X"></a>
-    </section>
+        <p class=>Retrouvez-nous sur nos réseaux sociaux :</p>
+        <div class="icon-row">
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="facebook.png" class="Icon" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel" target="_blank"><img src="linkedin.png" class="Icon" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="twitter.png" class="Icon" alt="X"></a>
+        </div>
+    </span>
 
     <div class="TexteFooter">
         Créateur de la page :
         <br>
         <strong> Martins Cristiano</strong>
-        <img src="" alt="Photo de Martins Cristiano">
     </div>
 </footer>
 
