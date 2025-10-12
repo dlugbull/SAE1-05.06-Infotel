@@ -1,4 +1,4 @@
-/*Globalité */
+/*GlobalitÃ© */
 *{
     margin:0px;
     font-family: Arial;
@@ -21,7 +21,7 @@ h2{
     h2{ font-size: 1.8rem; }
 }
 
-section {
+.section {
     padding: 30px;   
     background: #a5a7d6;
     display: block;
@@ -29,7 +29,7 @@ section {
     margin: 20px auto;
     position : relative;
     border-radius:10px;
-    max-width: 1000px; /* limite la largeur sur grand écran */
+    max-width: 1000px; /* limite la largeur sur grand Ã©cran */
 }
 
 body{
@@ -37,7 +37,7 @@ body{
 }
 
 /* Justification du texte */
-main, section, p, li {
+main, .section, p, li {
     text-align: justify;
     text-justify: inter-word;
 }
@@ -101,7 +101,7 @@ nav img{
   left:50%; margin-left:-30px;
 }
 
-/* Centrer toutes les images à l'intérieur du contenu principal */
+/* Centrer toutes les images Ã  l'intÃ©rieur du contenu principal */
 main img {
     display: block;
     margin: 0 auto;
@@ -109,7 +109,7 @@ main img {
     height: auto;
 }
 
-/* titre à gauche, image à droite, description en dessous */
+/* titre Ã  gauche, image Ã  droite, description en dessous */
 
 .produit{
     margin-bottom: 30px;
@@ -147,7 +147,7 @@ main img {
     text-decoration: underline;
 }
 
-/* Style pour la liste de points sous la section Logiciels */
+/* Style pour la liste de points sous la .section Logiciels */
 .points{
     margin: 10px auto 30px auto;
     list-style: none;
@@ -162,7 +162,7 @@ main img {
 }
 
 .points li::before{
-    content: "→"; /* flèche */
+    content: "â†’"; /* flÃ¨che */
     position: absolute;
     left: 0;
     top: 0;
@@ -174,14 +174,14 @@ main img {
 .produit .points{ text-align: center; display: inline-block; }
 .produit .points li{ text-align: left; }
 
-/* Responsive : empiler sur petits écrans */
+/* Responsive : empiler sur petits Ã©crans */
 @media (max-width: 900px){
     .ligne-produit{ flex-direction: column-reverse; align-items: stretch; }
     .titre-produit{ text-align: left; flex-basis: auto; }
     .image-produit{ text-align: center; flex-basis: auto; }
 }
 
-/* Sur grand écran, centrer le titre dans sa colonne et ajouter un padding pour équilibrer l'espace */
+/* Sur grand Ã©cran, centrer le titre dans sa colonne et ajouter un padding pour Ã©quilibrer l'espace */
 @media (min-width: 901px){
     .ligne-produit{ align-items: center; }
     .titre-produit{ display: flex; align-items: center; justify-content: center; padding-right: 20px; text-align: center; }
@@ -190,13 +190,13 @@ main img {
 .Activite{
     position: relative;
     overflow: hidden;
-    /* anneau coloré léger + ombre portée */
+    /* anneau colorÃ© lÃ©ger + ombre portÃ©e */
     box-shadow: 0 0 0 8px rgba(11,68,112,0.15), 0 18px 40px rgba(0,0,0,0.35);
     border-radius: 14px;
 }
 
 .Activite::after{
-    /* léger hover sombre pour améliorer la lisibilité du texte blanc */
+    /* lÃ©ger hover sombre pour amÃ©liorer la lisibilitÃ© du texte blanc */
     content: "";
     position: absolute;
     left: 0; right: 0; top: 0; bottom: 0;
@@ -207,9 +207,9 @@ main img {
 /* Image Activite */
 .gif {
     display: block;
-    width: 100vw; /* occupe toute la largeur de la fenêtre */
+    width: 100vw; /* occupe toute la largeur de la fenÃªtre */
     height: auto; /* conserve les proportions */
-    margin-left: calc(50% - 50vw); /* aligne l'image pour couvrir tout l'écran */
+    margin-left: calc(50% - 50vw); /* aligne l'image pour couvrir tout l'Ã©cran */
     margin-right: calc(50% - 50vw);
     object-fit: cover; /* si l'image est plus grande, conserve le ratio en couvrant */
 }
@@ -232,14 +232,14 @@ main img {
     .titre{ font-size: 1.6rem; padding: 0.1rem .5rem; }
 }
 
-/* Réduire l'épaisseur des contours sur petits écrans */
+/* RÃ©duire l'Ã©paisseur des contours sur petits Ã©crans */
 @media (max-width: 600px){
     .Image{ border-width: 4px; border-radius: 10px; }
     .Activite{ box-shadow: 0 0 0 4px rgba(11,68,112,0.12), 0 12px 24px rgba(0,0,0,0.25); border-radius: 10px; }
 }
 
 
-/* Titres : plus grands et centrés */
+/* Titres : plus grands et centrÃ©s */
 main h1, h1 {
     text-align: center;
     margin: 1.5rem 0;
@@ -283,7 +283,7 @@ main h2, h2 {
 
  }
 
-footer > section > a{
+footer > .section > a{
     display: inline-flex;
     align-items: center;
 }
@@ -301,7 +301,7 @@ footer > section > a{
 .recrutement {
     display: block; /* pour pouvoir utiliser margin auto */
     margin: 0 auto; /* centre horizontalement */
-    max-width: 500px; /* limite la largeur afin que l'image ne déborde pas */
+    max-width: 500px; /* limite la largeur afin que l'image ne dÃ©borde pas */
 }
 
 .recrutement .hover {
@@ -326,7 +326,7 @@ footer > section > a{
     will-change: transform, filter;
 }
 
-/* S'assurer que l'image garde son centrage et ses bordures arrondies à l'intérieur du conteneur */
+/* S'assurer que l'image garde son centrage et ses bordures arrondies Ã  l'intÃ©rieur du conteneur */
 .recrutement img {
     width: 100%;
     height: auto;
