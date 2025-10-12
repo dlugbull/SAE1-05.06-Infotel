@@ -36,7 +36,7 @@ body{
     background: #f5f5f5;
 }
 
-/* Justification du texte pour le contenu principal */
+/* Justification du texte */
 main, section, p, li {
     text-align: justify;
     text-justify: inter-word;
@@ -77,7 +77,7 @@ nav a:hover{
 }
 
 nav img{
-    height:40px;
+    height: 40px;
 }
 
 /* Logiciels*/
