@@ -243,3 +243,8 @@ footer > section > a{
     display: inline-flex;
     align-items: center;
 }
+
+footer img{
+    height:75px;
+    width:75px;
+}
