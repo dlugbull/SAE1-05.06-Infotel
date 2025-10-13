@@ -4,40 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Histoire</title>
+    <link rel="stylesheet" href="histoire.css">
 </head>
 <body>
-    <div>
-        <h1>1979-1988 : La fondation et les début d'Infotel</h1>
-        <p>Infotel est une entreprise fondé le 31 décembre 1979 par Michel Koutchouk, 
-            Bernard Lafforet, Josyane Muller et Alain Hallereau.
-            L’entreprise Infotel travail sur le secteur des bases de données et propose des logiciels et au temps réel.
-            Infotel favorise la séparation juridique entre les activités de service et les activités d’édition de logiciels.
-            Grâce aux grands succès de leurs logicielle, il crée une filial au Etas-Unies.</p>
+
+    <header>
+        <nav>
+            <a href=""><img src="images/infotel.png" alt="logo infotel"></a>
+            <a href="">Accueil</a>
+            <a href="histoire/histoire.html">Histoire</a>
+            <a href="economie/page_eco.html">Economie</a>
+            <a href="activites/activites.html">Activités</a>
+            <a href="https://infotel.com/contact/" target="_blank">Contacter Infotel</a>
+            <select id="langue" onchange="changerLangue(this)">
+                <option selected value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <img src="Histoire.gif" alt="gif" class="gif">
+        <div class="title">Histoire d'Infotel</div>
     </div>
 
-    <h1>1989-1998 :</h1>
-    <p>L’entreprise ouvre une agence à Toulouse (en 1989) et crée en 1990 une autre société Infotel GmbH en Allemagne.
-        En 1998 il procède à leur toute première croissance extrême et ils obtiennent la certification ISO 9001.</p>
-    <h1>1999-2008 :</h1>
-    <p>Infotel fait partie du Nouveau marché de la bourse de Paris à partir du 21 janvier.
-        Cette année Infotel signe un accord avec IBM pour développer des logiciels de DB2 qui sera commercialiser par IBM.
-        Ils prennent un positionnement stratégique : Web-To-Database (« concept d’offre techniques globale pour répondre aux besoins dévolution et aider les entreprises à ouvrir leur système d’information. »).
-    </p>
-    <h1>2009-2012 :</h1>
-    <p>L’offre de logiciel grandit avec par exemple la création d’Archive Data Software,
-        cela permet de crée un nouveau canal qui distribue des logiciels d’archivage comme Arcsys.
-        En Juin 2011, Infotel acquit la société allemande Insoft Software GmbH.</p>
-    <h1>2013-2016 :</h1>
-    <p>L’entreprise se développe vers la mobilité et assiste aux grands comptes pour la gestion des données de Big Data.</p>
-    <h1>2017-2022 :</h1>
-    <p>Infotel vise trois axes de développement :
-        l’innovation, l’ambition et la continuité.</p>
-    <h1>2022-2026 :</h1>
-    <p>Infotel se transforme en visant quatre axe :
-        surperformer leur marcher, travailler davantage sur la création de logicielle,
-        faire une politique attractive et RH dynamique et accélérer la croissance de l’entreprise au niveau national et international.</p>
+    <div class="container">
+
+    <div class="texte">
+        <h2>1979-1988 :</h2>
+        <p>Infotel est une entreprise créée le 31 décembre 1979 par Michel Koutchouk, Bernard Lafforet, Josyane Muller et Alain Hallereau. Elle travaille dans le domaine des bases de données, c’est-à-dire des systèmes qui permettent de stocker et organiser de grandes quantités d’informations. Infotel développe des logiciels, c’est-à-dire des programmes informatiques, certains fonctionnent en temps réel, ce qui veut dire qu’ils traitent les données immédiatement, sans délai. L’entreprise sépare juridiquement ses activités de service (aider les clients) et d’édition de logiciels (créer les programmes). Grâce au succès de ses logiciels, Infotel ouvre une filiale aux États-Unis.</p>
+    </div>
+    
+    <div class="texte">
+        <h2>1989-1998 :</h2>
+        <p>En 1989, Infotel ouvre une agence à Toulouse. En 1990, elle crée une société en Allemagne appelée Infotel GmbH. En 1998, l’entreprise connaît une grande croissance (augmentation importante de ses activités et revenus) et obtient la certification ISO 9001, qui est une norme internationale prouvant que leur organisation respecte des standards de qualité.</p>
+    </div>
+    
+    <div class="texte">
+        <h2>1999-2008 :</h2>
+        <p>Le 21 janvier 1999, Infotel entre en bourse à Paris, c’est-à-dire qu’elle commence à vendre des actions au public. Cette année-là, elle signe un partenariat avec IBM, un grand groupe informatique, pour développer des logiciels autour de DB2, un système de gestion de bases de données commercialisé par IBM. Infotel adopte une stratégie appelée « Web-To-Database », qui signifie offrir des solutions techniques complètes pour aider les entreprises à connecter leurs sites internet à leurs bases de données.</p>
+    </div>
+    
+    <div class="texte">
+        <h2>2009-2012 :</h2>
+        <p>Infotel élargit son offre avec la création d’Archive Data Software, une société spécialisée dans les logiciels d’archivage, comme Arcsys, qui permet de stocker et gérer les données anciennes de façon sécurisée. En juin 2011, Infotel achète la société allemande Insoft Software GmbH, renforçant ainsi sa présence en Europe.</p>
+    </div>
+
+    <div class="texte">
+        <h2>2013-2016 :</h2>
+        <p>L’entreprise se développe dans le domaine de la mobilité (applications pour smartphones et tablettes) et accompagne les grandes entreprises dans la gestion du Big Data, c’est-à-dire l’analyse de très grandes quantités de données.</p>
+    </div>
+    
+    <div class="texte">
+        <h2>2017-2022 :</h2>
+        <p>Infotel se concentre sur trois objectifs : innover (créer de nouvelles technologies ou services), avoir de grandes ambitions (se développer davantage) et assurer la continuité (maintenir ses activités et sa croissance stable).</p>
+    </div>
+
+    <div class="texte">
+        <h2>2022-2026 :</h2>
+        <p> Infotel vise quatre axes pour son développement : Surperformer leur marché (être meilleur que leurs concurrents), Développer davantage la création de logiciels, Mettre en place une politique RH attractive et dynamique (attirer et garder les talents), Accélérer la croissance de l’entreprise en France et à l’international.</p>
+    </div>
+    
+    </div>
+
+    <div class="carte_infotel">
+        <img src="carte_infotel.png" alt="image">
+    </div>
+
+
 </body>
-<footer>
-    <h1>Antoine MECENERO--CHRETIEN</h1>
-</footer>
+    <footer>
+        <a href="#header"><img src="images/fleche_haut.png" alt="fleche de retour vers le haut"></a>
+        <div>
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel-group/" target="_blank"><img src="images/linkedin.jpg" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="images/x.png" alt="X"></a>
+        </div>
+        <p>Antoine MECENERO--CHRETIEN</p>
+    </footer>
 </html>
