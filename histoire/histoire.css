@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+
+
+
+nav{
+display: flex;
+justify-content: space-evenly;
+flex-direction: row;
+background: #072440;
+height : 50px;
+align-items : center;
+z-index:10;
+}
+
+nav a{
+text-decoration: none;
+color : white;
+}
+
+nav select{
+background: #072440;
+color:white;
+border:none;
+}
+
+nav a:hover{
+border-bottom: lightblue 5px solid;
+transition : border-bottom 0.2s;
+}
+
+nav img{
+height : 40px;
+}
+
+
+.gif{
+  height: 100vh;
+  width:100%;
+}
+
+
+
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.title {
+      display: block;
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      align-items:center;
+      font-size: 40px;
+      color: white;
+      padding: 14px 40px;
+  }
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+
+
+.container {
+  overflow: hidden;  /* Cette propriété fixe la largeur de l’élément ayant la classe container à 600 pixels.
+Cela signifie que, peu importe la taille de l’écran, la largeur maximale de .container sera de 600px */
+  padding: 20px 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+}
+
+
+
+
+
+.container:before {
+  content: '';
+  width: 8px;
+  height: 100%;
+  background: #072440;
+  position: absolute;
+  left: 20px;
+}
+
+
+
+
+
+.texte {
+  background: #a5a7d6;
+  padding: 20px;
+  margin: 20px 60px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  -webkit-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75); /* ajoute une ombre portée à l’élément, ici pour les navigateurs utilisant le préfixe -webkit- (comme Chrome ou Safari).
+Les paramètres signifient :
+-5px : décalage horizontal de l’ombre (vers la gauche)
+5px : décalage vertical de l’ombre (vers le bas)
+41px : flou de l’ombre
+-18px : étalement de l’ombre (réduit la taille de l’ombre)
+rgba(0,0,0,0.75) : couleur noire avec une opacité de 75%
+Cela donne un effet de profondeur à l’élément ciblé. */
+-moz-box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75); /*ajoute une ombre portée à l’élément pour les navigateurs Mozilla Firefox (préfixe -moz-).
+Les paramètres signifient :
+-5px : décalage horizontal de l’ombre (vers la gauche)
+5px : décalage vertical de l’ombre (vers le bas)
+41px : flou de l’ombre
+-18px : étalement de l’ombre (réduit la taille de l’ombre)
+rgba(0,0,0,0.75) : couleur noire avec une opacité de 75%
+Cela donne un effet de profondeur à l’élément ciblé, visible sous Firefox.*/
+box-shadow: -5px 5px 41px -18px rgba(0,0,0,0.75); /*ajoute une ombre portée à l’élément ciblé.
+Les paramètres signifient :
+-5px : décalage horizontal de l’ombre (vers la gauche)
+5px : décalage vertical de l’ombre (vers le bas)
+41px : flou de l’ombre (plus la valeur est grande, plus l’ombre est diffuse)
+-18px : étalement de l’ombre (valeur négative = ombre plus petite)
+rgba(0,0,0,0.75) : couleur noire avec une opacité de 75%
+Cela donne un effet de profondeur à l’élément, le faisant ressortir visuellement.*/
+}
+
+
+
+
+
+.texte h2 span {
+  font-size: 16px;
+  color: #6ab04c;
+  border: 2px solid #535c68;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+
+
+
+
+.texte:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: white;
+  left: -10px;
+  top: 50%;
+  transform: translatey(-50%) rotate(45deg); /*Une transformation bidimensionnelle est appliquée à un élément par la propriété « transform ».
+  Cette propriété contient une liste de fonctions de transformation similaires à celles autorisées par SVG.*/
+  position: absolute;
+  z-index: -1; /*Pour une boîte positionnée,
+  la propriété 'z-index' spécifie le niveau de pile de la boîte dans le contexte d’empilement actuel
+  et si la boîte établit un contexte d’empilement local.*/
+  border: 2px solid #000;
+}
+
+
+
+
+
+.texte:after {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background: #F5F5F5;
+  border-radius: 50%;
+  border: 4px solid #313131;
+  left: -65px;
+  top: 50%;
+  transform: translatey(-50%) rotate(45deg);
+  position: absolute;
+}
+
+
+
+
+
+.carte_infotel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* footer */
+footer div img{
+    width : 50px;
+    height : 50px;
+    margin-left:10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: #0b4470;
+    color: white;
+    align-items : center;
+    gap:15px;
+}
+
+footer p{
+    margin-right: 15px;
+}
