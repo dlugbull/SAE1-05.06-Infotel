@@ -246,8 +246,7 @@ footer img{
 
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #a5a7d6;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -259,8 +258,8 @@ footer img{
     margin-bottom: 5px;
 }
 
-.accordion.active, .accordion:hover {
-    background-color: #ccc;
+.accordion:hover {
+    color: blue;
 }
 
 .panel {
