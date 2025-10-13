@@ -243,3 +243,31 @@ footer img{
     height:75px;
     width:75px;
 }
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-bottom: 10px;
+}
