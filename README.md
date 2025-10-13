@@ -35,6 +35,8 @@ Auteur : MECENERO--CHRETIEN Antoine</strong><br>
 Vérification W3C :
 ![screenW3S](images/valider_histoire_sae.png)
 https://validator.w3.org/nu/?<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Fhistoire%2Fhistoire.html">
+![screenW3S](images/score_histoire.png)
+https://www.ecoindex.fr<a href="https://www.ecoindex.fr/resultat/?id=74bf3a1f-14de-43f5-acdb-547695b6b0e7">
 
 <br><br>
 <strong>Page économie<br>
