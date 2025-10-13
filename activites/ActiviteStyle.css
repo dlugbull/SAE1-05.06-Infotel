@@ -190,7 +190,6 @@ main img {
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 0 8px rgba(11,68,112,0.15), 0 18px 40px rgba(0,0,0,0.35);
-    border-radius: 14px;
 }
 
 .Activite::after{
