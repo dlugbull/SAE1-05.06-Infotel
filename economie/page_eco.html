@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../images/infotel.png">
-
     <link rel="stylesheet" href="page_eco_css.css">
     <title>Page_eco</title>
 </head>
 <body>
-<!-- Barre de Navigation -->
 <header> 
     <nav>
         <a href="../index.html"><img src="../images/infotel.png" alt="logo infotel" height="40"></a>
@@ -25,203 +23,139 @@
     </nav>
 </header>
 
-
-    <!-- graphique -->
-
-
-
-        <div class="graph-texte-container">
-            <div class="chart-container">
-
-                <div class="chart">
-
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="line-chart">
-                        
-                        
-                        <!-- Courbe -->
-                        <polyline 
-                            fill="none" 
-                            stroke="#0077cc" 
-                            stroke-width="0.7" 
-                            points="20,63 34,68 48,55 63,42.5 76,40.5 90,44"/>
-                        
-                        <!-- Points clés -->
-                        <circle cx="20" cy="63" r="0.8" fill="#34a853" data-info="2019 248.4M€" />
-                        <circle cx="34" cy="68" r="0.8" fill="#34a853" data-info="2020 235M€" />
-                        <circle cx="48" cy="55" r="0.8" fill="#34a853" data-info="2021 263M€"/>
-                        <circle cx="63" cy="42.5" r="0.8" fill="#34a853" data-info="2022 300M€"/>
-                        <circle cx="76" cy="40.5" r="0.8" fill="#34a853" data-info="2023 307.5M€"/>
-                        <circle cx="90" cy="44" r="0.8" fill="#34a853" data-info="2024 294.8M€"/>
-                    </svg>
-
-                    <!-- Axe horizontal : Abscisse -->
-                    <div class="y-axis">
-                        <div class="y-tick">M€</div>
-                        <div class="y-tick">350</div>
-                        <div class="y-tick">300</div>
-                        <div class="y-tick">250</div>
-                        <div class="y-tick">200</div>
-                        <div class="y-tick">0</div>
-                    </div>
-
-                    <!-- Axe horizontal : Ordonnée -->
-                    <div class="x-axis">
-                        <div class="x-tick">2019</div>
-                        <div class="x-tick">2020</div>
-                        <div class="x-tick">2021</div>
-                        <div class="x-tick">2022</div>
-                        <div class="x-tick">2023</div>
-                        <div class="x-tick">2024</div>
-                        <div class="x-tick">Années</div>
+<main>
+    <!-- Graphique + texte -->
+    <section class="graph-texte-container">
+        <div class="chart-container">
+            <div class="chart">
+                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="line-chart">
+                    <polyline fill="none" stroke="#0077cc" stroke-width="0.7" points="20,63 34,68 48,55 63,42.5 76,40.5 90,44"/>
+                    <circle cx="20" cy="63" r="0.8" fill="#34a853" data-info="2019 248.4M€" />
+                    <circle cx="34" cy="68" r="0.8" fill="#34a853" data-info="2020 235M€" />
+                    <circle cx="48" cy="55" r="0.8" fill="#34a853" data-info="2021 263M€"/>
+                    <circle cx="63" cy="42.5" r="0.8" fill="#34a853" data-info="2022 300M€"/>
+                    <circle cx="76" cy="40.5" r="0.8" fill="#34a853" data-info="2023 307.5M€"/>
+                    <circle cx="90" cy="44" r="0.8" fill="#34a853" data-info="2024 294.8M€"/>
+                </svg>
+                <div class="y-axis">
+                    <div class="y-tick">M€</div>
+                    <div class="y-tick">350</div>
+                    <div class="y-tick">300</div>
+                    <div class="y-tick">250</div>
+                    <div class="y-tick">200</div>
+                    <div class="y-tick">0</div>
+                </div>
+                <div class="x-axis">
+                    <div class="x-tick">2019</div>
+                    <div class="x-tick">2020</div>
+                    <div class="x-tick">2021</div>
+                    <div class="x-tick">2022</div>
+                    <div class="x-tick">2023</div>
+                    <div class="x-tick">2024</div>
+                    <div class="x-tick">Années</div>
                 </div>
             </div>
         </div>
-
-
-
-
-    <!--Text à côté de graphique-->
-
-
-
-
-    <div class="character-graph">
-        <h1>Vue d'ensemble économique</h1>
-        <p>Infotel est une entreprise de services du numérique (ESN) française créée en 1979, spécialisée dans la transformation digitale des grands comptes européens. Cotée sur Euronext Paris depuis 1999, la société occupe une position solide sur le marché français des ESN avec un classement au 31e rang national.</p>
-        <br>
-        <p>Données financières clés 2024<p>
-        <p>Chiffre d'affaires : 294,8 M€ (-4,1% vs 2023)</p>
-        <p>Résultat net : 18,5 M€ (+2,3% vs 2023)</p>
-        <p>Marge opérationnelle courante : 9,3% (vs 8,9% en 2023)</p>
-        <p>Effectifs : Plus de 3 100 collaborateurs</p>
-        <p>Capitalisation boursière : Environ 300 M€</p>
-    </div>
-    </div>
+        <article class="character-graph">
+            <h1>Vue d'ensemble économique</h1>
+            <p>Infotel est une entreprise de services du numérique (ESN) française créée en 1979, spécialisée dans la transformation digitale des grands comptes européens. Cotée sur Euronext Paris depuis 1999, la société occupe une position solide sur le marché français des ESN avec un classement au 31e rang national.</p>
+            <p>Données financières clés 2024</p>
+            <ul>
+                <li>Chiffre d'affaires : 294,8 M€ (-4,1% vs 2023)</li>
+                <li>Résultat net : 18,5 M€ (+2,3% vs 2023)</li>
+                <li>Marge opérationnelle courante : 9,3% (vs 8,9% en 2023)</li>
+                <li>Effectifs : Plus de 3 100 collaborateurs</li>
+                <li>Capitalisation boursière : Environ 300 M€</li>
+            </ul>
+        </article>
+    </section>
     <hr>
 
-
-
-
-
-    <!--Texte entre les deux graphiques-->
-
-
-
-    <div class="text-milieu">
+    <!-- Texte milieu -->
+    <section class="text-milieu">
         <div class="text-milieu-1-2">
-            
-            <div class="text-milieu-1">
+            <article class="text-milieu-1">
                 <h2>Structure actionnariale et investisseurs</h2>
                 <h3>Principaux actionnaires</h3>
-                <p>La structure actionnariale d'Infotel révèle une gouvernance stable avec des fondateurs toujours présents :</p>
-                <p>Bernard Connes-Lafforet (Président-Directeur Général) : 26,7%</p>
-                <p>Michel Koutchouk (Directeur Général Délégué) : 5,6%</p>
-                <p>Amiral Gestion : 6,6%</p>
-                <p>Flottant : 63,6%</p>
-            </div>
-
-            <div class="text-milieu-2">
+                <ul>
+                    <li>Bernard Connes-Lafforet (Président-Directeur Général) : 26,7%</li>
+                    <li>Michel Koutchouk (Directeur Général Délégué) : 5,6%</li>
+                    <li>Amiral Gestion : 6,6%</li>
+                    <li>Flottant : 63,6%</li>
+                </ul>
+            </article>
+            <article class="text-milieu-2">
                 <h2>Positionnement concurrentiel</h2>
                 <h3>Classement dans le secteur ESN français</h3>
-                <p>Infotel se positionne au 31e rang du classement des ESN françaises avec 270,6 M€ de chiffre d'affaires France en 2022, face à des leaders comme :</p>
-                <p>Capgemini : 4,3 Md€</p>
-                <p>SCC France : 2,6 Md€</p>
-                <p>Accenture : 2,4 Md€</p>
-            </div>
+                <ul>
+                    <li>Infotel : 270,6 M€ (2022)</li>
+                    <li>Capgemini : 4,3 Md€</li>
+                    <li>SCC France : 2,6 Md€</li>
+                    <li>Accenture : 2,4 Md€</li>
+                </ul>
+            </article>
         </div>
-        <div class="text-milieu2">
+        <article class="text-milieu2">
             <h2>Politique de dividende</h2>
             <p>Infotel maintient une politique de dividende stable avec 2€ par action proposé pour 2024, offrant un rendement d'environ 4,7%. Cette politique reflète la confiance du management dans les perspectives du groupe.</p>
-        </div>
-    </div>
+        </article>
+    </section>
     <hr>
 
-
-
-
-
-        
-        <!--Camembert-->
-
-
-
-
-    <div class="title-camembert_camembert_et_texte">
+    <!-- Camembert + texte -->
+    <section class="title-camembert_camembert_et_texte">
         <div id="camembert">
-        <div id="tooltip"></div>
-
-
-        <svg width="200" height="200" viewBox="0 0 200 200">
-            <!-- Banque/Finance : 39,2% -->
-            <path d="" fill="#27AE60" />
-            <!-- Industrie : 26,3% -->
-            <path d="" fill="#3498DB" />
-            <!-- Services/Transport : 19,1% -->
-            <path d="" fill="#FFC300" />
-            <!-- Assurance : 11,4% -->
-            <path d="" fill="#FF5733" />
-            <!-- Administration : 4,1% -->
-            <path d="" fill="#fe0098" />
-        </svg>
-
-        <ul>
-            <li><span id="vert"></span>Banque / Finance — 39,2 %</li>
-            <li><span id="bleu"></span>Industrie — 26,3 %</li>
-            <li><span id="jaune"></span>Services / Transport — 19,1 %</li>
-            <li><span id="rouge"></span>Assurance — 11,4 %</li>
-            <li><span id="rose"></span>Administration — 4,1 %</li>
-        </ul>
+            <div id="tooltip"></div>
+            <svg width="200" height="200" viewBox="0 0 200 200"></svg>
+            <ul>
+                <li><span id="vert"></span>Banque / Finance — 39,2 %</li>
+                <li><span id="bleu"></span>Industrie — 26,3 %</li>
+                <li><span id="jaune"></span>Services / Transport — 19,1 %</li>
+                <li><span id="rouge"></span>Assurance — 11,4 %</li>
+                <li><span id="rose"></span>Administration — 4,1 %</li>
+            </ul>
         </div>
-
-        <div class="text-camembert">
+        <article class="text-camembert">
             <h1>Marchés et secteurs d'activité</h1>
             <h2>Répartition par secteur (2024)</h2>
             <h3>Analyse sectorielle</h3>
             <p>Infotel concentre une part significative de son activité dans le secteur Banque/Finance (39,2%), suivi par l'Industrie (26,3%) et les Services/Transport (19,1%). Cette répartition reflète une forte dépendance aux secteurs financiers, bien que la diversification vers l'industrie et les services atténue ce risque.</p>
             <p>Le secteur Assurance représente 11,4% du chiffre d'affaires, tandis que l'Administration publique constitue une part plus modeste à 4,1%. Cette diversification sectorielle permet à Infotel de bénéficier de multiples sources de revenus, renforçant ainsi sa résilience face aux fluctuations économiques spécifiques à chaque secteur.</p>
-    
-        </div>
-    </div>
+        </article>
+    </section>
     <hr>
 
-
-
-
-
-    <!-- texte en dessous de camembert -->
-     <div class="text-en-dessous-camembert">
-        <div class="text-en-dessous-camembert-1">
+    <!-- Texte en dessous du camembert -->
+    <section class="text-en-dessous-camembert">
+        <article class="text-en-dessous-camembert-1">
             <h1>Partenaires majeurs</h1>
-            <p>IBM : Partenaire depuis 1999</p>
-            <p>Oracle : Membre du PartnerNetwork</p>
-            <p>SAP : Partenaire BUILD</p>
-            <p>SysperTec Communication : Solutions mainframe-web</p>
-            <p>Teclib : Partenaire PLATINUM pour GLPI</p>
-        </div>
-        <div class="text-en-dessous-camembert-2">
+            <ul>
+                <li>IBM : Partenaire depuis 1999</li>
+                <li>Oracle : Membre du PartnerNetwork</li>
+                <li>SAP : Partenaire BUILD</li>
+                <li>SysperTec Communication : Solutions mainframe-web</li>
+                <li>Teclib : Partenaire PLATINUM pour GLPI</li>
+            </ul>
+        </article>
+        <article class="text-en-dessous-camembert-2">
             <h1>Partenariats internationaux</h1>
-            <p>Sytac IT Consulting (Pays-Bas) : Spécialiste Java et Front-End</p>
-            <p>NextStage : Investisseur et partenaire de développemen</p>
-        </div>
-    </div>
-        <hr>
+            <ul>
+                <li>Sytac IT Consulting (Pays-Bas) : Spécialiste Java et Front-End</li>
+                <li>NextStage : Investisseur et partenaire de développement</li>
+            </ul>
+        </article>
+    </section>
+    <hr>
 
-
-
-
-    <!-- texte conclusion page éco-->
-     <div class="conclusion-eco">
+    <!-- Conclusion -->
+    <section class="conclusion-eco">
         <h1>Que faut-il retenir ?</h1>
         <p>Infotel présente un profil économique solide avec une expertise reconnue auprès des grands comptes, une structure financière saine et des perspectives de reprise progressive. Malgré les défis conjoncturels de 2024, la société maintient sa stratégie de croissance à long terme, s'appuyant sur l'innovation, l'international et le développement de son activité logicielle. La stabilité actionnariale et la politique de dividende constante témoignent de la confiance dans le modèle économique d'Infotel.</p>
-     </div>
+    </section>
+</main>
 
-    <!-- Footer à mettre et script -->
+<script src="page_eco_script.js"></script>
 
-
-
-    <script src="page_eco_script.js"></script>
-
-<!-- Bas de la page-->
 <footer>
     <a href="#header"><img src="../images/fleche_haut.png" alt="fleche de retour vers le haut" height="75" width="75"></a>
     <div class="TexteFooter">
@@ -233,14 +167,9 @@
             <a href="https://x.com/Infotel_" target="_blank"><img src="../images/x.png" class="Icon" alt="X"></a>
         </div>
     </div>
-
     <div class="TexteFooter">
-        Créateur de la page :
-        <br>
-        <strong> Gabriel Liegeon</strong>
+        Créateur de la page : <strong>Gabriel Liegeon</strong>
     </div>
 </footer>
-
 </body>
-
 </html>
