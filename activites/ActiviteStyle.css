@@ -205,10 +205,8 @@ main img {
 /* Image Activite */
 .gif {
     display: block;
-    width: 100vw; /* occupe toute la largeur de la fenêtre */
-    height: auto; /* conserve les proportions */
-    margin-left: calc(50% - 50vw); /* aligne l'image pour couvrir tout l'écran */
-    margin-right: calc(50% - 50vw);
+    width: 100%; /* occupe toute la largeur de la fenêtre */
+    height: 100vh; /* conserve les proportions */
     object-fit: cover; /* si l'image est plus grande, conserve le ratio en couvrant */
 }
 
