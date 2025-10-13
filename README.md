@@ -52,4 +52,5 @@ Vérification W3C :
 Auteur : MARTINS Cristiano</strong><br>
 Vérification W3C :
 ![screenW3S](images/screenActivite.png)
-https://validator.w3.org/nu/?<a href="showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Factivites%2Factivites.html">
+<a href="showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Factivites%2Factivites.html">
+![screenEco](images/ecoActivite.png)
