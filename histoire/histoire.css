@@ -5,40 +5,41 @@
 }
 
 
-
-
-
+header{
+    position: fixed;
+    width:100%;
+    z-index:10;
+}
 
 nav{
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-background: #072440;
-height : 50px;
-align-items : center;
-z-index:10;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: #072440;
+    height : 50px;
+    align-items : center;
+    z-index:10;
 }
 
 nav a{
-text-decoration: none;
-color : white;
+    text-decoration: none;
+    color : white;
 }
 
 nav select{
-background: #072440;
-color:white;
-border:none;
+    background: #072440;
+    color:white;
+    border:none;
 }
 
 nav a:hover{
-border-bottom: lightblue 5px solid;
-transition : border-bottom 0.2s;
+    border-bottom: lightblue 5px solid;
+    transition : border-bottom 0.2s;
 }
 
 nav img{
-height : 40px;
+    height:40px;
 }
-
 
 .gif{
   height: 100vh;
