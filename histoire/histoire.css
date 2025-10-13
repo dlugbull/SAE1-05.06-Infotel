@@ -191,7 +191,31 @@ Cela donne un effet de profondeur à l’élément, le faisant ressortir visuell
   position: absolute;
 }
 
+.accordion {
+    background-color: #a5a7d6;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
 
+.accordion:hover {
+    color: blue;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #a5a7d6;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-bottom: 10px;
+}
 
 
 
@@ -245,28 +269,3 @@ footer img{
 }
 
 
-.accordion {
-    background-color: #a5a7d6;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
-    transition: 0.4s;
-    margin-bottom: 5px;
-}
-
-.accordion:hover {
-    color: blue;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: #a5a7d6;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    margin-bottom: 10px;
-}
