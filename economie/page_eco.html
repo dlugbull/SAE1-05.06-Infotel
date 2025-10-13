@@ -9,7 +9,21 @@
     <title>Page_eco</title>
 </head>
 <body>
-
+<!-- Barre de Navigation -->
+<header> 
+    <nav>
+        <a href="../index.html"><img src="../images/infotel.png" alt="logo infotel" height="40"></a>
+        <a href="../index.html">Accueil</a>
+        <a href="../histoire/histoire.html">Histoire</a>
+        <a href="../economie/page_eco.html">Economie</a>
+        <a href="../activites/activites.html">Activités</a>
+        <a href="https://infotel.com/contact/" target="_blank">Contacter Infotel</a>
+        <select id="langue" onchange="changerLangue(this)">
+            <option selected value="fr">Français</option>
+            <option value="en">English</option>
+        </select>
+    </nav>
+</header>
 
 
     <!-- graphique -->
@@ -206,9 +220,27 @@
 
 
     <script src="page_eco_script.js"></script>
-    <footer>
-        <p>footer a remplir</p>
-    </footer>
+
+<!-- Bas de la page-->
+<footer>
+    <a href="#header"><img src="../images/fleche_haut.png" alt="fleche de retour vers le haut" height="75" width="75"></a>
+    <div class="TexteFooter">
+        <strong>Réseaux Sociaux</strong>
+        <p>Retrouvez-nous sur nos réseaux sociaux :</p>
+        <div class="icon-row">
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="../images/facebook.png" class="Icon" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel" target="_blank"><img src="../images/linkedin.png" class="Icon" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="../images/x.png" class="Icon" alt="X"></a>
+        </div>
+    </div>
+
+    <div class="TexteFooter">
+        Créateur de la page :
+        <br>
+        <strong> Gabriel Liegeon</strong>
+    </div>
+</footer>
+
 </body>
 
 </html>
