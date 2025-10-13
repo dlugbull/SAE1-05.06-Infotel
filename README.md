@@ -27,7 +27,10 @@ Pour la conception du site, nous nous sommes inspirés des sites d'Infotel, d'As
 <strong>Page d'accueil<br>
 Auteur : LUGBULL Damien</strong><br>
 Vérification W3C :
-
+![screenW3S](images/valider_index.png)
+https://validator.w3.org/nu/?<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Fhistoire%2Fhistoire.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2F">
+![screenW3S](images/score_index.png)
+https://www.ecoindex.fr<a href="https://www.ecoindex.fr/resultat/?id=74bf3a1f-14de-43f5-acdb-547695b6b0e7](https://www.ecoindex.fr/resultat/?id=103f60c5-605f-4ada-ba30-ecd50579086c">
 
 <br><br>
 <strong>Page histoire<br>
