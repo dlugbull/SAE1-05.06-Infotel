@@ -33,14 +33,14 @@ Vérification W3C :
 <strong>Page histoire<br>
 Auteur : MECENERO--CHRETIEN Antoine</strong><br>
 Vérification W3C :
-
+![screenW3S](images/valider_histoire_sae.png)
+https://validator.w3.org/nu/?<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Fhistoire%2Fhistoire.html">
 
 <br><br>
 <strong>Page économie<br>
 Auteur : LIEGEON Gabriel</strong><br>
 Vérification W3C :
 
-https://validator.w3.org/nu/?<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Fhistoire%2Fhistoire.html">
 
 <br><br>
 <strong>Page activités<br>
