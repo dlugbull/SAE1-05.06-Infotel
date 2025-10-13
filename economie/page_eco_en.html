@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/infotel.png">
+
+    <link rel="stylesheet" href="page_eco_css.css">
+    <title>Page_eco</title>
+</head>
+<!-- Navigation Bar -->
+<header> 
+    <nav>
+        <a href="../index.html"><img src="../images/infotel.png" alt="infotel logo" height="40"></a>
+        <a href="../index.html">Home</a>
+        <a href="../histoire/histoire.html">History</a>
+        <a href="../economie/page_eco.html">Economy</a>
+        <a href="../activites/activites.html">Activities</a>
+        <a href="https://infotel.com/contact/" target="_blank">Contact Infotel</a>
+        <select id="langue" onchange="changerLangue(this)">
+            <option value="fr">Français</option>
+            <option selected value="en">English</option>
+        </select>
+    </nav>
+</header>
+
+<!-- Chart -->
+
+<div class="graph-texte-container">
+    <div class="chart-container">
+        <div class="chart">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="line-chart">
+                <!-- Curve -->
+                <polyline 
+                    fill="none" 
+                    stroke="#0077cc" 
+                    stroke-width="0.7" 
+                    points="20,63 34,68 48,55 63,42.5 76,40.5 90,44"/>
+                <!-- Key points -->
+                <circle cx="20" cy="63" r="0.8" fill="#34a853" data-info="2019 €248.4M" />
+                <circle cx="34" cy="68" r="0.8" fill="#34a853" data-info="2020 €235M" />
+                <circle cx="48" cy="55" r="0.8" fill="#34a853" data-info="2021 €263M"/>
+                <circle cx="63" cy="42.5" r="0.8" fill="#34a853" data-info="2022 €300M"/>
+                <circle cx="76" cy="40.5" r="0.8" fill="#34a853" data-info="2023 €307.5M"/>
+                <circle cx="90" cy="44" r="0.8" fill="#34a853" data-info="2024 €294.8M"/>
+            </svg>
+            <!-- Y Axis -->
+            <div class="y-axis">
+                <div class="y-tick">M€</div>
+                <div class="y-tick">350</div>
+                <div class="y-tick">300</div>
+                <div class="y-tick">250</div>
+                <div class="y-tick">200</div>
+                <div class="y-tick">0</div>
+            </div>
+            <!-- X Axis -->
+            <div class="x-axis">
+                <div class="x-tick">2019</div>
+                <div class="x-tick">2020</div>
+                <div class="x-tick">2021</div>
+                <div class="x-tick">2022</div>
+                <div class="x-tick">2023</div>
+                <div class="x-tick">2024</div>
+                <div class="x-tick">Years</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="character-graph">
+        <h1>Economic Overview</h1>
+        <p>Infotel is a French digital services company (ESN) founded in 1979, specializing in the digital transformation of major European corporations. Listed on Euronext Paris since 1999, the company holds a strong position in the French ESN market, ranking 31st nationally.</p>
+        <br>
+        <p>Key Financial Data 2024</p>
+        <p>Revenue: €294.8M (-4.1% vs 2023)</p>
+        <p>Net income: €18.5M (+2.3% vs 2023)</p>
+        <p>Current operating margin: 9.3% (vs 8.9% in 2023)</p>
+        <p>Employees: Over 3,100 staff</p>
+        <p>Market capitalization: Around €300M</p>
+    </div>
+</div>
+
+<!-- Text next to chart -->
+
+<hr>
+
+<!-- Text between charts -->
+
+<div class="text-milieu">
+    <div class="text-milieu-1-2">
+        <div class="text-milieu-1">
+            <h2>Shareholding Structure and Investors</h2>
+            <h3>Main Shareholders</h3>
+            <p>Infotel's shareholding structure shows stable governance with founders still present:</p>
+            <p>Bernard Connes-Lafforet (Chairman & CEO): 26.7%</p>
+            <p>Michel Koutchouk (Deputy CEO): 5.6%</p>
+            <p>Amiral Gestion: 6.6%</p>
+            <p>Free float: 63.6%</p>
+        </div>
+        <div class="text-milieu-2">
+            <h2>Competitive Positioning</h2>
+            <h3>Ranking in the French ESN Sector</h3>
+            <p>Infotel ranks 31st among French ESNs with €270.6M revenue in France in 2022, compared to leaders such as:</p>
+            <p>Capgemini: €4.3B</p>
+            <p>SCC France: €2.6B</p>
+            <p>Accenture: €2.4B</p>
+        </div>
+    </div>
+    <div class="text-milieu2">
+        <h2>Dividend Policy</h2>
+        <p>Infotel maintains a stable dividend policy with €2 per share proposed for 2024, offering a yield of around 4.7%. This policy reflects management's confidence in the group's outlook.</p>
+    </div>
+</div>
+<hr>
+
+<!-- Pie chart -->
+
+<div class="title-camembert_camembert_et_texte">
+    <div id="camembert">
+        <div id="tooltip"></div>
+        <svg width="200" height="200" viewBox="0 0 200 200">
+            <!-- Banking/Finance: 39.2% -->
+            <path d="" fill="#27AE60" />
+            <!-- Industry: 26.3% -->
+            <path d="" fill="#3498DB" />
+            <!-- Services/Transport: 19.1% -->
+            <path d="" fill="#FFC300" />
+            <!-- Insurance: 11.4% -->
+            <path d="" fill="#FF5733" />
+            <!-- Administration: 4.1% -->
+            <path d="" fill="#fe0098" />
+        </svg>
+        <ul>
+            <li><span id="vert"></span>Banking / Finance — 39.2%</li>
+            <li><span id="bleu"></span>Industry — 26.3%</li>
+            <li><span id="jaune"></span>Services / Transport — 19.1%</li>
+            <li><span id="rouge"></span>Insurance — 11.4%</li>
+            <li><span id="rose"></span>Administration — 4.1%</li>
+        </ul>
+    </div>
+    <div class="text-camembert">
+        <h1>Markets and Business Sectors</h1>
+        <h2>Sector Breakdown (2024)</h2>
+        <h3>Sector Analysis</h3>
+        <p>Infotel focuses a significant share of its business in the Banking/Finance sector (39.2%), followed by Industry (26.3%) and Services/Transport (19.1%). This distribution reflects a strong dependence on financial sectors, although diversification into industry and services mitigates this risk.</p>
+        <p>The Insurance sector accounts for 11.4% of revenue, while Public Administration represents a more modest share at 4.1%. This sectoral diversification enables Infotel to benefit from multiple revenue sources, strengthening its resilience to sector-specific economic fluctuations.</p>
+    </div>
+</div>
+<hr>
+
+<!-- Text below pie chart -->
+<div class="text-en-dessous-camembert">
+    <div class="text-en-dessous-camembert-1">
+        <h1>Major Partners</h1>
+        <p>IBM: Partner since 1999</p>
+        <p>Oracle: Member of the PartnerNetwork</p>
+        <p>SAP: BUILD Partner</p>
+        <p>SysperTec Communication: Mainframe-web solutions</p>
+        <p>Teclib: PLATINUM Partner for GLPI</p>
+    </div>
+    <div class="text-en-dessous-camembert-2">
+        <h1>International Partnerships</h1>
+        <p>Sytac IT Consulting (Netherlands): Java and Front-End specialist</p>
+        <p>NextStage: Investor and development partner</p>
+    </div>
+</div>
+<hr>
+
+<!-- Conclusion -->
+<div class="conclusion-eco">
+    <h1>Key Takeaways</h1>
+    <p>Infotel presents a solid economic profile with recognized expertise among major clients, a healthy financial structure, and prospects for gradual recovery. Despite the challenges of 2024, the company maintains its long-term growth strategy, relying on innovation, international expansion, and the development of its software business. Stable shareholding and a consistent dividend policy demonstrate confidence in Infotel's business model.</p>
+</div>
+
+<script src="page_eco_script.js"></script>
+
+<!-- Page bottom -->
+<footer>
+    <a href="#header"><img src="../images/fleche_haut.png" alt="back to top arrow" height="75" width="75"></a>
+    <div class="TexteFooter">
+        <strong>Social Networks</strong>
+        <p>Find us on our social networks:</p>
+        <div class="icon-row">
+            <a href="https://www.facebook.com/groupeInfotel" target="_blank"><img src="../images/facebook.png" class="Icon" alt="Facebook"></a>
+            <a href="https://www.linkedin.com/company/infotel" target="_blank"><img src="../images/linkedin.png" class="Icon" alt="LinkedIn"></a>
+            <a href="https://x.com/Infotel_" target="_blank"><img src="../images/x.png" class="Icon" alt="X"></a>
+        </div>
+    </div>
+    <div class="TexteFooter">
+        Page creator:
+        <br>
+        <strong>Gabriel Liegeon</strong>
+    </div>
+</footer>
+
+</body>
+
+</html>
 
