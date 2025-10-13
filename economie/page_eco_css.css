@@ -1,3 +1,8 @@
+header{
+    position: fixed;
+    width:100%;
+    z-index:10;
+}
 
 nav{
     display: flex;
@@ -11,12 +16,12 @@ nav{
 
 nav a{
     text-decoration: none;
-    color : #F5F5F5;
+    color : white;
 }
 
 nav select{
     background: #072440;
-    color: #F5F5F5;
+    color:white;
     border:none;
 }
 
@@ -26,7 +31,7 @@ nav a:hover{
 }
 
 nav img{
-    height: 40px;
+    height:40px;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, li, a, select, nav, .section {
