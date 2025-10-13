@@ -40,6 +40,7 @@ Vérification W3C :
 Auteur : LIEGEON Gabriel</strong><br>
 Vérification W3C :
 
+https://validator.w3.org/nu/?<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Fhistoire%2Fhistoire.html">
 
 <br><br>
 <strong>Page activités<br>
