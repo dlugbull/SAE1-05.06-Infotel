@@ -45,3 +45,4 @@ Vérification W3C :
 <strong>Page activités<br>
 Auteur : MARTINS Cristiano</strong><br>
 Vérification W3C :
+<img src="images/screenActivite.png" alt="logo infotel" height="40>
