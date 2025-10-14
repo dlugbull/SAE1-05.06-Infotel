@@ -186,14 +186,15 @@ body{
 
 
 
-
+.top{
+    height : 50px;
+}
 
 /* conteneur graphique + texte */
 .graph-texte-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
     gap:30px;
 
     
