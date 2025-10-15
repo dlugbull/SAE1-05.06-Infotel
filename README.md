@@ -58,3 +58,6 @@ Vérification W3C :
 <a href="showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fdlugbull.github.io%2FSAE1-05.06-Infotel%2Factivites%2Factivites.html">
 ![screenEco](images/ecoActivite.png)
 <a href="https://www.ecoindex.fr/resultat/?id=2c6ecfa8-b1e1-405a-a685-3fd43fcaf928">
+
+## Répartition des commits
+![screenW3S](images/Commits_over_time.png)
